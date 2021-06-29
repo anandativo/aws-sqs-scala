@@ -5,7 +5,7 @@ import software.amazon.awssdk.services.sqs.model.SendMessageRequest
 import software.amazon.awssdk.services.sqs.model.ReceiveMessageRequest
 
 object SqsHandle {
-  val movieQueueURL="https://sqs.us-east-1.amazonaws.com/441105568453/movieQ"
+  val movieQueueURL="https://sqs.REGION.amazonaws.com/QUEUE/movieQ"
 
   val  sqsClient : SqsClient = SqsClient.builder()
     .region(Region.US_EAST_1)
